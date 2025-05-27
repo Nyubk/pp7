@@ -46,8 +46,8 @@ col5.metric("Prob. detección temprana", f"{100 - seguridad_factor * 30:.1f} %")
 # Gráfico
 fig, ax = plt.subplots()
 
-fig.patch.set_facecolor('black')       # Fondo externo (alrededor de la gráfica)
-ax.set_facecolor('black')              # Fondo interno del gráfico (área de datos)
+#fig.patch.set_facecolor('black')       # Fondo externo (alrededor de la gráfica)
+#ax.set_facecolor('black')              # Fondo interno del gráfico (área de datos)
 
 ax.plot(df["Día"], df["Perfiles comprometidos"], marker='o', color='red')
 ax.set_title("Propagación del ataque a lo largo del tiempo")
